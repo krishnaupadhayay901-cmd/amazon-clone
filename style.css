@@ -1,0 +1,349 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e3e6e6;
+}
+
+/* Main Navbar */
+.navbar {
+    background-color: #131921;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    gap: 15px;
+}
+
+.logo h2 {
+    font-size: 28px;
+    color: white;
+}
+
+.logo span {
+    color: #ff9900;
+    font-size: 15px;
+}
+
+.location,
+.account,
+.orders {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.location small,
+.account small,
+.orders small {
+    color: #cccccc;
+    font-size: 12px;
+}
+
+.location strong,
+.account strong,
+.orders strong {
+    font-size: 14px;
+}
+
+.search {
+    display: flex;
+    height: 40px;
+    flex: 1;
+    max-width: 650px;
+}
+
+.search select {
+    padding: 8px;
+    border: none;
+    background-color: #e6e6e6;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.search button {
+    width: 50px;
+    border: none;
+    background-color: #febd69;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cart {
+    font-size: 19px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Second Navbar */
+.menu {
+    background-color: #232f3e;
+    padding: 12px 20px;
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.menu a:hover {
+    border: 1px solid white;
+    padding: 3px;
+}
+
+/* Hero Section */
+.hero {
+    height: 350px;
+    background:
+        linear-gradient(to right, rgba(0,0,0,0.65),
+        rgba(0,0,0,0.05)),
+        url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600")
+        center/cover;
+
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-text {
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    background-color: #ff9900;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Product Categories */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 25px;
+    margin-top: -10px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    min-width: 0;
+}
+
+.card h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.card a:hover {
+    color: #c7511f;
+    text-decoration: underline;
+}
+
+/* Deals Section */
+.deals {
+    background-color: white;
+    margin: 10px 25px 25px;
+    padding: 25px;
+}
+
+.deals h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.deal-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.deal-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.deal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.deal-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.deal-card h3 {
+    margin: 15px 0;
+    font-size: 17px;
+}
+
+.price {
+    color: #b12704;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.deal-card button {
+    background-color: #ffd814;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.deal-card button:hover {
+    background-color: #f7ca00;
+}
+
+/* Footer */
+footer {
+    background-color: #131a22;
+    color: white;
+    margin-top: 30px;
+}
+
+.back {
+    background-color: #37475a;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+}
+
+.footer-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.footer-content a {
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    border-top: 1px solid #555;
+    text-align: center;
+    padding: 25px;
+}
+
+.copyright h2 {
+    margin-bottom: 12px;
+}
+
+.copyright p {
+    font-size: 13px;
+    color: #cccccc;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .search {
+        order: 2;
+        flex-basis: 100%;
+        max-width: none;
+    }
+
+    .products,
+    .deal-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .location,
+    .orders {
+        display: none;
+    }
+
+    .hero {
+        height: 250px;
+        padding: 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .products,
+    .deal-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
